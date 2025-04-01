@@ -2,36 +2,33 @@
 
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Details Coming Soon!', href: '#' },
 ]
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-black">
+    <div className="bg-black min-h-screen">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">BSidesPhilly</span>
-              {/* <Image
+              <Image
                 alt=""
                 src="/bsidesphilly_logo.png"
                 className="h-8 w-auto"
                 width={600}
                 height={600}
-              /> */}
+              />
             </a>
           </div>
-          <div className="flex lg:hidden">
+          {/* <div className="flex lg:hidden">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -40,19 +37,19 @@ export default function Home() {
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {/* {navigation.map((item) => (
+          </div> */}
+          {/* <div className="hidden lg:flex lg:gap-x-12">
+            {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
                 {item.name}
               </a>
-            ))} */}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            {/* <a href="#" className="text-sm/6 font-semibold text-white">
+            ))}
+          </div> */}
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm/6 font-semibold text-white">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a> */}
-          </div>
+            </a>
+          </div> */}
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
@@ -107,13 +104,13 @@ export default function Home() {
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="sm:mb-8 flex justify-center">
-            <div className="relative rounded-full px-3 py-1">
+            <div className="relative flex justify-center">
               <Image
                 src="/bsidesphilly_logo.png"
                 alt="BSidesPhilly Logo"
                 width={600}
                 height={600}
-                className="relative px-3 py-1"
+                className="mx-auto"
               />
             </div>
           </div>
@@ -121,6 +118,11 @@ export default function Home() {
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
               Friday, 5 Dec 2025
             </h1>
+            <br />
+            <br />
+            <h2 className="text-2xl font-semibold tracking-tight text-balance text-[#4CBB17] sm:text-4xl">
+              Details coming soon!
+            </h2>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
               <a href="https://philadelphia.livecasinohotel.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-100">
                 Live! Casino & Hotel Philadelphia
