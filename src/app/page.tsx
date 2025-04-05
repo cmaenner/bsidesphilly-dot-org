@@ -39,7 +39,7 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/sponsor"
-                className="rounded-md bg-[#4CBB17] px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#3da913] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4CBB17]"
+                className="rounded-md bg-[#4CBB17] px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#3da913] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4CBB17]"
               >
                 Become a Sponsor
               </Link>
