@@ -1,8 +1,8 @@
 'use client'
 
 import { CheckIcon } from '@heroicons/react/20/solid'
-import Header from '../components/headers'
-
+import Header from '@/app/components/headers'
+import Footer from '@/app/components/footer'
 type TierName = 'VIP' | 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | "Ben's Bash Exclusive" | 'Friends of Ben' | "What's in Your Pocket" | 'Sustainer';
 
 interface Tier {
@@ -325,6 +325,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -145,4 +145,17 @@ export const pricing = {
       ],
     },
   ] as Tier[],
-}; 
+};
+
+export const navigation = [
+  { name: 'Home', href: '/' },
+  // { name: 'About', href: '/about' },
+  { name: 'Sponsor', href: '/sponsor' },
+]
+
+export const companyName = 'BSides Philly'
+export const companyAddress = '900 Packer Ave, Philadelphia, PA 19148'
+export const companyPhone = '+1 (215) 413-4800'
+export const companyEmail = 'info@bsidesphilly.com'
+export const companyWebsite = 'https://bsidesphilly.com'
+export const currentYear = new Date().getFullYear()
