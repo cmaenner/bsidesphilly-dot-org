@@ -256,6 +256,27 @@ export default function Example() {
                     'rounded-3xl p-6 bg-gray-900 flex flex-col h-full relative'
                   )}
                 >
+                  {tier.name === "Ben's Bash Exclusive" && (
+                    <div className="absolute -top-5 left-1/2 -translate-x-1/2">
+                      <span className="inline-flex items-center rounded-full bg-[#4CBB17] px-4 py-1 text-sm font-medium text-white ring-1 ring-inset ring-[#4CBB17]/50">
+                        After-Party
+                      </span>
+                    </div>
+                  )}
+                  {tier.name === 'Friends of Ben' && (
+                    <div className="absolute -top-5 left-1/2 -translate-x-1/2">
+                      <span className="inline-flex items-center rounded-full bg-[#4CBB17] px-4 py-1 text-sm font-medium text-white ring-1 ring-inset ring-[#4CBB17]/50">
+                        New
+                      </span>
+                    </div>
+                  )}
+                  {tier.name === 'Sustainer' && (
+                    <div className="absolute -top-5 left-1/2 -translate-x-1/2">
+                      <span className="inline-flex items-center rounded-full bg-[#4CBB17] px-4 py-1 text-sm font-medium text-white ring-1 ring-inset ring-[#4CBB17]/50">
+                        Monthly Support
+                      </span>
+                    </div>
+                  )}
                   <div className="flex-1">
                     <h3
                       id={tier.id}
