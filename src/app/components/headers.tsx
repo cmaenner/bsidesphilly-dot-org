@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'Home', href: '/' },
     // { name: 'About', href: '/about' },
     { name: 'Sponsor', href: '/sponsor' },
+    { name: 'Sponsor Kit', href: '/2025-sponsor-kit.pdf' },
   ]
 
   return (
