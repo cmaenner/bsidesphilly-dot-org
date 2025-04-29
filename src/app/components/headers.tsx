@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { navigation } from '@/app/sponsor/data';
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 // import { CheckIcon, XMarkIcon as XMarkIconMini } from "@heroicons/react/20/solid";
@@ -7,14 +8,6 @@ import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const navigation = [
-    { name: 'Home', href: '/' },
-    // { name: 'About', href: '/about' },
-    { name: 'Sponsor', href: '/sponsor' },
-    { name: 'Sponsor Kit', href: '/2025-sponsor-kit.pdf' },
-  ]
-
   return (
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
