@@ -147,6 +147,33 @@ export const pricing = {
   ] as Tier[],
 };
 
+export const sponsors = [
+  {
+    name: 'AlgoSec',
+    image: '/sponsors/algosec.svg',
+    url: 'https://www.algosec.com',
+    tier: 'Gold',
+  },
+  {
+    name: 'Securely Built',
+    image: '/sponsors/securelybuilt.svg',
+    url: 'https://www.securelybuilt.com',
+    tier: 'Silver',
+  },
+  {
+    name: 'Coursestack',
+    image: '/sponsors/coursestack.svg',
+    url: 'https://www.coursestack.com/',
+    tier: 'Bronze',
+  },
+  {
+    name: 'Buckhorn Consulting',
+    image: '/sponsors/buckhornconsulting.svg',
+    url: 'https://buckhornconsulting.com',
+    tier: 'Bronze',
+  },
+]
+
 export const navigation = [
   { name: 'Home', href: '/' },
   // { name: 'About', href: '/about' },

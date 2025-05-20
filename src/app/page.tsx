@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Header from '@/app/components/headers'
 import Link from 'next/link'
 import Footer from '@/app/components/footer'
+
 export default function Home() {
   return (
     <div className="bg-black min-h-screen">
