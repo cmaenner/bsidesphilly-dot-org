@@ -156,21 +156,27 @@ export const sponsors = [
   },
   {
     name: 'Securely Built',
-    image: '/sponsors/securelybuilt.svg',
+    image: '/sponsors/securelybuilt.png',
     url: 'https://www.securelybuilt.com',
     tier: 'Silver',
   },
   {
+    name: 'Buckhorn Consulting',
+    image: '/sponsors/buckhornconsulting.png',
+    url: 'https://buckhornconsulting.com',
+    tier: 'Bronze',
+  },
+  {
     name: 'Coursestack',
-    image: '/sponsors/coursestack.svg',
+    image: '/sponsors/coursestack.png',
     url: 'https://www.coursestack.com/',
     tier: 'Bronze',
   },
   {
-    name: 'Buckhorn Consulting',
-    image: '/sponsors/buckhornconsulting.svg',
-    url: 'https://buckhornconsulting.com',
-    tier: 'Bronze',
+    name: 'Kevin Tech IT Support',
+    image: '/sponsors/kevtech.png',
+    url: 'https://www.kevtechitsupport.com/',
+    tier: 'Pocket',
   },
 ]
 

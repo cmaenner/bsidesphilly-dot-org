@@ -3,13 +3,15 @@ import Image from 'next/image'
 import Header from '@/app/components/headers'
 import Link from 'next/link'
 import Footer from '@/app/components/footer'
+import Sponsors from '@/app/components/sponsors'
+import Team from './components/team'
 
 export default function Home() {
   return (
     <div className="bg-black min-h-screen">
       <Header />
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:py-28">
           <div className="sm:mb-8 flex justify-center">
             <div className="relative flex justify-center">
               <Image
@@ -47,6 +49,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Sponsors />
+        <Team />
       </div>
       <Footer />
     </div>
